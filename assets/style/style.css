@@ -1,0 +1,322 @@
+/* Global */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+/*Sub*/
+.teks-sub {
+  color: #f9532d;
+  text-align: center;
+  position: relative;
+  padding: 60px 7% 1.4rem;
+  margin-top: 0;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Gambar */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #242424;
+  color: white;
+  font-family: "Oxygen", sans-serif;
+}
+
+.navbar-brand {
+  color: white;
+  padding-right: 90vh;
+  padding-left: 10vh;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  margin-right: 30px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
+  color: #f9532d;
+}
+
+.navbar-brand:hover {
+  color: white !important;
+  cursor: default;
+}
+
+/* Hello Section Styles */
+.gambar-hello {
+  background-image: url("../image/bg-syk.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 0;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.gambar-hello::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.hallo {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.tombol-cv {
+  color: black;
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border-color: black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* About Me Section Styles */
+.about-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-image img {
+  object-fit: cover;
+  width: 700px;
+  height: 580px;
+}
+
+.teks-awal {
+  font-size: 75px;
+  color: #f9532d;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.teks-data {
+  font-size: 48px;
+}
+
+.teks-data-sub {
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+/* Project Section Styles */
+.projek {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 40px;
+}
+
+.projek img {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.projek h3 {
+  margin-top: 20px;
+  color: #f9532d;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+}
+
+.projek h5 {
+  font-family: "Oxygen", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+/* Kontak Section Styles */
+.kontainer-kontak {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Oxygen", sans-serif;
+  gap: 100px;
+}
+
+.logo {
+  cursor: pointer;
+  padding: 30px;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-family: "Oxygen", sans-serif;
+}
+
+/* Responsive Styles */
+
+/* Tablet Styles */
+@media (max-width: 850px) {
+  .navbar-brand {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .navbar-nav .nav-link {
+    margin-right: 100px;
+  }
+
+  .gambar-hello {
+    height: 70vh;
+  }
+
+  .hallo {
+    font-size: 24px;
+  }
+
+  .tombol-cv {
+    width: 120px;
+    height: 30px;
+    font-size: small;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    order: -1;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .dataku {
+    padding: 20px;
+  }
+
+  .teks-awal {
+    font-size: 40px;
+  }
+
+  .teks-data {
+    font-size: 28px;
+  }
+
+  .teks-data-sub {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  .projek {
+    padding: 20px;
+  }
+
+  .projek h3 {
+    font-size: 24px;
+  }
+
+  .projek h5 {
+    font-size: 18px;
+  }
+
+  .projek img {
+    height: 400px;
+  }
+
+  .kontainer-kontak {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo {
+    padding: 0 20px;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  .hallo {
+    font-size: 20px;
+  }
+
+  .tombol-cv {
+    width: 100px;
+    height: 24px;
+  }
+
+  .about-image img {
+    width: 400px;
+    height: 250px;
+  }
+
+  .teks-awal {
+    font-size: 32px;
+  }
+
+  .teks-data {
+    font-size: 20px;
+  }
+
+  .teks-data-sub {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+
+  .projek h3 {
+    font-size: 20px;
+  }
+
+  .projek h5 {
+    font-size: 14px;
+  }
+
+  .projek img {
+    height: 300px;
+  }
+}
